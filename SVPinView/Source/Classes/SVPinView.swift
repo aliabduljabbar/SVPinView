@@ -254,9 +254,7 @@ extension SVPinView : UICollectionViewDataSource, UICollectionViewDelegate, UICo
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let width = (collectionView.bounds.width - (interSpace * CGFloat(max(pinLength, 1) - 1)))/CGFloat(pinLength)
-        let top = (collectionView.bounds.height - width) / 2
-        return UIEdgeInsets(top: top, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
     public override func layoutSubviews() {
