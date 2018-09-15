@@ -40,7 +40,7 @@ public class SVPinView: UIView {
     public var pinIinputAccessoryView:UIView = UIView()
     
     fileprivate var password = [String]()
-    public var didFinishCallback: ((String)->())?
+    @objc public var didFinishCallback: ((String)->())?
     
     fileprivate var view:UIView!
     fileprivate var reuseIdentifier = "SVPinCell"
