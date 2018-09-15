@@ -35,7 +35,7 @@ public class SVPinView: UIView {
     @IBInspectable public var fieldCornerRadius:CGFloat = 0
     public var style:SVPinViewStyle = .box
     
-    public var font:UIFont = UIFont.systemFont(ofSize: 15)
+    @objc public var font:UIFont = UIFont.systemFont(ofSize: 15)
     public var keyboardType:UIKeyboardType = UIKeyboardType.phonePad
     public var pinIinputAccessoryView:UIView = UIView()
     
@@ -61,7 +61,7 @@ public class SVPinView: UIView {
         collectionView.register(collectionViewNib, forCellWithReuseIdentifier: reuseIdentifier)
         flowLayout.scrollDirection = .vertical //weird!!!
         collectionView.isScrollEnabled = false
-
+        
         self.addSubview(view)
         view.frame = bounds
         view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
@@ -265,6 +265,7 @@ extension SVPinView : UICollectionViewDataSource, UICollectionViewDelegate, UICo
 extension SVPinView : UITextFieldDelegate
 {
     public func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.text = ""
         let text = textField.text!
 
         if text.count == 0 {
