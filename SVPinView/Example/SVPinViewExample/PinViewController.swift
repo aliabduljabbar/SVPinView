@@ -32,7 +32,7 @@ class PinViewController: UIViewController {
         pinView.textColor = UIColor.white
         pinView.borderLineColor = UIColor.white
         pinView.borderLineThickness = 1
-        pinView.shouldSecureText = true
+        pinView.shouldSecureText = false
         pinView.style = .none
         pinView.fieldBackgroundColor = UIColor.white.withAlphaComponent(0.3)
         pinView.fieldCornerRadius = 15

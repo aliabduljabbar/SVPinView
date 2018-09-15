@@ -202,11 +202,10 @@ extension SVPinView : UICollectionViewDataSource, UICollectionViewDelegate, UICo
         textField.text = " "
         textField.isSecureTextEntry = false
         textField.textColor = self.textColor
-        textField.tintColor = textColor
+        textField.tintColor = UIColor.clear
         textField.font = self.font
         textField.keyboardType = self.keyboardType
         textField.inputAccessoryView = self.pinIinputAccessoryView
-        textField.tintColor = UIColor.clear
         
         textField.delegate = self
         textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
@@ -235,7 +234,6 @@ extension SVPinView : UICollectionViewDataSource, UICollectionViewDelegate, UICo
             containerView.layer.borderWidth = borderLineThickness
             containerView.layer.borderColor = borderLineColor.cgColor
         }
-        
         //reset the resetFlag :P
         if isResetting && (indexPath.row == pinLength - 1) {
             isResetting = false

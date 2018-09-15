@@ -20,4 +20,12 @@ class SVPinField: UITextField {
         }
         return super.canPerformAction(action, withSender: sender)
     }
+    
+    override func caretRect(for position: UITextPosition) -> CGRect {
+        return .zero
+    }
+    
+    override func selectionRects(for range: UITextRange) -> [Any] {
+        return [];
+    }
 }
