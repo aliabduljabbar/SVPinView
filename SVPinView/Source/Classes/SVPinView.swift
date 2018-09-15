@@ -206,6 +206,7 @@ extension SVPinView : UICollectionViewDataSource, UICollectionViewDelegate, UICo
         textField.font = self.font
         textField.keyboardType = self.keyboardType
         textField.inputAccessoryView = self.pinIinputAccessoryView
+        textField.tintColor = UIColor.clear
         
         textField.delegate = self
         textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
