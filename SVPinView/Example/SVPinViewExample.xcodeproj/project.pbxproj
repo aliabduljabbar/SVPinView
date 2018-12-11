@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02DB209E217C614000CE469C /* SVPinViewExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SVPinViewExample.entitlements; sourceTree = "<group>"; };
 		0D937BCAD12D8DEB5C39314F /* Pods-SVPinViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVPinViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SVPinViewExample/Pods-SVPinViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 		762AB709897C249EA93A3C59 /* Pods_SVPinViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVPinViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31AAF812089DD67004F5BE4 /* SVPinViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVPinViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +71,7 @@
 		B31AAF832089DD67004F5BE4 /* SVPinViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				02DB209E217C614000CE469C /* SVPinViewExample.entitlements */,
 				B31AAF842089DD67004F5BE4 /* AppDelegate.swift */,
 				B31AAF862089DD67004F5BE4 /* PinViewController.swift */,
 				B31AAF882089DD67004F5BE4 /* Main.storyboard */,
@@ -100,7 +102,6 @@
 				B31AAF7E2089DD67004F5BE4 /* Frameworks */,
 				B31AAF7F2089DD67004F5BE4 /* Resources */,
 				5E298C3C353D330BD3BD52F2 /* [CP] Embed Pods Frameworks */,
-				58F23CCE2085B021C3A25C15 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +125,11 @@
 					B31AAF802089DD67004F5BE4 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -159,21 +165,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		58F23CCE2085B021C3A25C15 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SVPinViewExample/Pods-SVPinViewExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5E298C3C353D330BD3BD52F2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,10 +348,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = JQ8J7DB532;
+=======
+				DEVELOPMENT_TEAM = "";
+>>>>>>> f4986c76a47574272934408b8a78c4fffe472560
 				INFOPLIST_FILE = SVPinViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xornorik.SVPinViewExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xornorik.SVPinView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,10 +369,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = JQ8J7DB532;
+=======
+				DEVELOPMENT_TEAM = "";
+>>>>>>> f4986c76a47574272934408b8a78c4fffe472560
 				INFOPLIST_FILE = SVPinViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xornorik.SVPinViewExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xornorik.SVPinView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
